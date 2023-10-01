@@ -1,5 +1,17 @@
+# komleksitas waktu O(N)
+# komleksitas ruang O(N)
+
 def pair_sum(arr, target):
-    return []
+    num_indices = {}
+
+    for i, num in enumerate(arr):
+        complement = target - num
+        if complement in num_indices:
+            return [num_indices[complement], i]
+
+        num_indices[num] = i
+
+    return None
 
 if __name__ == '__main__':
     print(pair_sum([1, 2, 3, 4, 6], 6)) # [1, 3]
