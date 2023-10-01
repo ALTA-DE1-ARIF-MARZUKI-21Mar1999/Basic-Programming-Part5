@@ -1,3 +1,6 @@
+# komleksitas waktu O(N^)
+# kompleksitas ruang O(N)
+
 def muncul_sekali(angka):
     angka_hanya_sekali = []
 

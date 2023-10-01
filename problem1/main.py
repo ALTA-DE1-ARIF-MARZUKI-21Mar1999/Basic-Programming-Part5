@@ -1,5 +1,7 @@
+# kompleksitas waktu O(√n)
+# komleksitas ruang O(1)
+
 def prime_number(number):
-    # return 0
     if number <= 1:
         return False
     if number <= 3:
